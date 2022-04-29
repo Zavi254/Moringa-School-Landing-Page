@@ -1,26 +1,53 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
 }
-/* General CSS */
-.twoColumnSection{
-    display: flex;
-    flex-direction: row;
+/*Navigation Bar Section*/
+.navigation-Section{
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
-.pinkButtonLink{
+#schoolName{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 20px;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+}
+ul li a{
     text-decoration: none;
-    background-color: #EC4067;
-    color: #ffff;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: thin;
-    border-radius: 5px;
+    color: #000000;
 }
-.column-6{
-    flex-basis: 50%;
+.rightNavigationLinks{
+    display: inline-block;
+    margin-left: 600px;
+    font-size: 1.1rem;
+}
+.rightNavigationLinks > li{
+    margin-right: 25px;
+}
+.linkButton{
+    background-color: #EC4067;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: 1.1rem;
 }
 
-/* Explore Section in the WebPage */
+/* Explore Section */
+.explore-Section{
+    margin-top: 130px;
+    border: 1px solid red;
+}
