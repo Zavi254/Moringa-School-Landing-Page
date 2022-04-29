@@ -2,3 +2,25 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: Nunito;
+}
+/* General CSS */
+.twoColumnSection{
+    display: flex;
+    flex-direction: row;
+}
+.pinkButtonLink{
+    text-decoration: none;
+    background-color: #EC4067;
+    color: #ffff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: thin;
+    border-radius: 5px;
+}
+.column-6{
+    flex-basis: 50%;
+}
+
+/* Explore Section in the WebPage */
