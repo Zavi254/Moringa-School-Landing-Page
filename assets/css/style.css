@@ -7,7 +7,14 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 /* General CSS */
-
+/* Pink color font sizes */
+.pink-color-text{
+    color: #EC4067;
+    font-size: 1.5rem;
+}
+#pink-color-text{
+    font-size: 2rem;
+}
 
 
 
@@ -58,27 +65,35 @@ ul li a{
 
 /* Explore Section */
 .explore-Section{
-    margin-top: 150px;
-    border: 1px solid red;
+    margin-top: 100px;
     padding-bottom: 70px;
 }
 .twoColumnSection{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .exploreSectionLeftContent{
     flex-basis: 60%;
-    border: 1px solid blue;
-    align-self: center;
+    margin: auto;
+    margin-left: 100px;
 }
-.exploreSectionLeftContent > *{  /*Target all the child elements of that div*/
-    border: 1px solid;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-bottom: 40px;
+.exploreSectionLeftContent > *:not(#moringaHeading){  /*Target all the child elements of that div*/
+   margin-bottom: 40px;
+}
+.paragraph-Spacing{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+#moringaHeading{
+    font-size: 1.2rem;
+    margin-bottom: 13px;
+    font-weight: 300;
 }
 .exploreSectionRightContent{
     flex-basis: 40%;
+    margin-right: 70px;
 }
 .fourColumnSection{
     display: flex;
