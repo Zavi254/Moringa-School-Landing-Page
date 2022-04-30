@@ -120,3 +120,37 @@ ul li a{
 .stories-Section{
     margin-bottom: 70px;
 }
+
+/* technical-Mentors-Section */
+.technical-Mentors-Section{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 120px;
+    font-size: 1rem;
+    padding-bottom: 100px;
+}
+.technical-Mentors-Cards{
+    margin-left: 40px;
+    position: relative;
+    z-index: -1;
+}
+.technical-Mentors-Cards > *{
+    margin-bottom: 15px;
+}
+.ask-a-question-button{
+    background-color: #EC4067;
+    color: #fff;
+    border-radius: 3px;
+    padding:5px 10px ;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.technical-Mentors-Names{
+    font-weight: 700;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    color: #fff;
+    
+}
