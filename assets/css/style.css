@@ -1,3 +1,7 @@
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -32,14 +36,6 @@ body{
     border: 1px solid #EC4067;
     margin-left: 10px;
 }
-
-
-
-
-
-
-
-
 /*Navigation Bar Section*/
 .navigation-Section{
     padding: 15px;
@@ -112,7 +108,15 @@ ul li a{
     flex-basis: 40%;
     margin-right: 70px;
 }
+.exploreSectionRightContent > *:not(#board-people-image, #top-page-image){
+    margin-bottom: 40px;
+}
 .fourColumnSection{
     display: flex;
     flex-direction: row;
+}
+
+/* Stories Section */
+.stories-Section{
+    margin-bottom: 70px;
 }
