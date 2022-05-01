@@ -1,26 +1,231 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
 }
 /* General CSS */
+.pink-color-text{
+    color: #EC4067;
+    font-size: 1.5rem;
+}
+#pink-color-text{
+    font-size: 2rem;
+}
+#pink-color-bike-text{
+    font-size:2rem ;
+}
+.buttonLink{
+    background-color: #EC4067;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding:10px 30px 10px 30px ;
+    box-shadow: 0px 0px 3px #EC4067;
+}
+#pink-border-color{
+    color: #EC4067;
+    padding: 5px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #EC4067;
+    margin-left: 10px;
+}
+#pink-link-color{
+    text-decoration: none;
+    color: #EC4067;
+    font-size: 1.3rem;
+}
+/*Navigation Bar Section*/
+.navigation-Section{
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+#schoolName{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 20px;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+.rightNavigationLinks{
+    display: inline-block;
+    margin-left: 600px;
+    font-size: 1.1rem;
+}
+.rightNavigationLinks > li{
+    margin-right: 25px;
+}
+.linkButton{
+    background-color: #EC4067;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: 1.1rem;
+}
+
+/* Explore Section */
+.explore-Section{
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
 .twoColumnSection{
     display: flex;
     flex-direction: row;
+
 }
-.pinkButtonLink{
-    text-decoration: none;
-    background-color: #EC4067;
-    color: #ffff;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: thin;
-    border-radius: 5px;
+.exploreSectionLeftContent{
+    flex-basis: 60%;
+    margin: auto;
+    margin-left: 100px;
 }
-.column-6{
-    flex-basis: 50%;
+.exploreSectionLeftContent > *:not(#moringaHeading, #bike-heading){  /*Target all the child elements of that div*/
+   margin-bottom: 40px;
+}
+.paragraph-Spacing{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+#moringaHeading{
+    font-size: 1.2rem;
+    margin-bottom: 13px;
+    font-weight: 300;
+}
+.exploreSectionRightContent{
+    flex-basis: 40%;
+    margin-right: 70px;
+}
+.exploreSectionRightContent > *:not(#board-people-image, #top-page-image){
+    margin-bottom: 40px;
+}
+.fourColumnSection{
+    display: flex;
+    flex-direction: row;
 }
 
-/* Explore Section in the WebPage */
+/* Stories Section */
+.stories-Section{
+    margin-bottom: 70px;
+}
+.stories-position-relative{
+    position: relative;
+    z-index: -1;
+}
+.orientation-first-absolute{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 550px;
+}
+.orientation-second-absolute{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.board-first-absolute{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.board-second-absolute{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    bottom: -20px;
+}
+
+/* technical-Mentors-Section */
+.technical-Mentors-Section{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 120px;
+    font-size: 1rem;
+    padding-bottom: 100px;
+}
+.technical-Mentors-Cards{
+    margin-left: 40px;
+    position: relative;
+    z-index: -1;
+}
+.technical-Mentors-Cards > *{
+    margin-bottom: 15px;
+}
+.ask-a-question-button{
+    background-color: #EC4067;
+    color: #fff;
+    border-radius: 3px;
+    padding:5px 10px ;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.technical-Mentors-Names{
+    font-weight: 700;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    color: #fff;
+    
+}
+
+/* Project Section */
+.project-Section{
+    margin-bottom: 100px;
+}
+.leftContent{
+    flex-basis: 40%;
+    margin: auto;
+    border: 1px solid blue;
+    padding: 20px;
+}
+.leftContent > *{
+    border: 1px solid green;
+    margin-bottom: 40px;
+}
+.rightContent{
+    flex-basis: 60%;
+    border: 1px solid blue;
+}
+#bike-heading{
+    font-size: 1.5rem;
+}
+/* Contact Us Section */
+.contact-Us{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Footer Section */
+.footer{
+    padding: 40px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    font-size: 1.1rem;
+}
